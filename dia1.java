@@ -1,4 +1,4 @@
-MAIN CLASS-VARIABLES
+//MAIN CLASS-VARIABLES
 ---------------------------------------------------------------------
 package ant_variables;
 
@@ -63,8 +63,8 @@ public class Ant_variables {
 }
 
 
-CONVERSIONES CLASS
--------------------------------------------------------------------------
+//CONVERSIONES CLASS
+//-------------------------------------------------------------------------
 package ant_variables;
 
 import java.util.Scanner;
@@ -100,8 +100,8 @@ public class Conversiones {
     
 }
 
-EJERCICIO CLASS
----------------------------------------------------------------------------
+//EJERCICIO CLASS
+//---------------------------------------------------------------------------
 package ant_variables;
 
 import java.util.Scanner;

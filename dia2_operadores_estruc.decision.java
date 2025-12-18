@@ -1,7 +1,5 @@
 //## MAIN FILE
 
-package dia2;
-
 import java.util.Scanner;
 
 public class Dia2 {
@@ -23,10 +21,6 @@ public class Dia2 {
 
 //## SUPERMERCADO
 
-package dia2;
-
-import java.util.Scanner;
-
 public class Supermercado {
 
     public static void main(String[] args) {
@@ -42,21 +36,21 @@ public class Supermercado {
             if (dia >= 1 && dia <= 8) {
                 double descuento = (total * 0.50);
                 System.out.println("""
-                               El porcentaje aplicado es el del 5 porciento: %s
-                               """.formatted(descuento));
+                                El porcentaje aplicado es el del 5 porciento: %s
+                                """.formatted(descuento));
             } else {
                 if (dia >= 9 && dia <= 15) {
                     System.out.println("""
-                               El porcentaje aplicado es el del 10 porciento: %s
+                                El porcentaje aplicado es el del 10 porciento: %s
                                """.formatted(total * 0.90));
                 } else {
                     if (dia >= 16 && dia <= 24) {
                         System.out.println("""
-                               El porcentaje aplicado es el del 3 porciento: %s
+                                El porcentaje aplicado es el del 3 porciento: %s
                                """.formatted(total * 0.97));
                     } else {
                         System.out.println("""
-                               El porcentaje aplicado es el del 8 porciento: %s
+                                El porcentaje aplicado es el del 8 porciento: %s
                                """.formatted(total * 0.92));
                     }
                 }
@@ -73,9 +67,7 @@ public class Supermercado {
 
 //## OPERADORES TERNARIOS
 
-package dia2;
 
-import java.util.Scanner;
 
 
 public class Switch {
@@ -99,9 +91,6 @@ public class Switch {
 
 //## SWITCH
 
-package dia2;
-
-import java.util.Scanner;
 
 public class switchCase {
 
@@ -112,16 +101,16 @@ public class switchCase {
 
         System.out.println("""
                            ***************************************
-                                  Bienvenido al restaurante
-                           Estas son las hamburguesas disponibles:
-                           
-                           1.Hamburguesa triple     $25000
-                           2.Hamburguesa doble      $20000
-                           3.Hamburguesa especial   $25000
-                           
-                           4.Cancelar orden
+                                    Bienvenido al restaurante
+                            Estas son las hamburguesas disponibles:
+                            
+                            1.Hamburguesa triple     $25000
+                            2.Hamburguesa doble      $20000
+                            3.Hamburguesa especial   $25000
+                            
+                            4.Cancelar orden
                            ***************************************
-                           """);
+                            """);
 
         int op = new Scanner(System.in).nextInt();
 
@@ -155,9 +144,7 @@ public class switchCase {
 
 //##EJERCICIO 1
 
-package dia2;
 
-import java.util.Scanner;
 
 public class Ejercicio1 {
 
@@ -170,7 +157,7 @@ public class Ejercicio1 {
                                 Bienvenido a la calculadora de
                                         horas extra
                            ****************************************
-                           """);
+                            """);
         System.out.println("Ingrese la cantidad de SLMV que gana");
         int salarios = new Scanner(System.in).nextInt();
 
@@ -182,12 +169,12 @@ public class Ejercicio1 {
             double extra = new Scanner(System.in).nextDouble();
 
             System.out.println("""
-                           ¿Era entre semana o fin de semana?
-                           
-                           Para entre semana ingrese "e" -->
-                           Para fin de semana ingrese "f" -->
-                           
-                           """);
+                            ¿Era entre semana o fin de semana?
+                            
+                            Para entre semana ingrese "e" -->
+                            Para fin de semana ingrese "f" -->
+                            
+                            """);
             String entrefin = new Scanner(System.in).nextLine();
 
             double smlv = 1400000;
@@ -199,32 +186,32 @@ public class Ejercicio1 {
                     double pagoporhora = extra * 0.01;
                     double sueldoTotal = pagoporhora + totalsalarios;
                     System.out.println("""
-                                       Su salario base es: %s
-                                       Su salario total por horas trabajadas en la primera quincena y entre semana de: %s
-                                       """.formatted(totalsalarios,sueldoTotal));
+                                        Su salario base es: %s
+                                        Su salario total por horas trabajadas en la primera quincena y entre semana de: %s
+                                        """.formatted(totalsalarios,sueldoTotal));
 
                 } else {
                     double pagoporhora = extra * 0.02;
                     double sueldoTotal = pagoporhora + totalsalarios;
                                         System.out.println("""
-                                       Su salario base es: %s
-                                       Su salario total por horas trabajadas en la primera quincena y entre semana de: %s
-                                       """.formatted(totalsalarios,sueldoTotal));
+                                        Su salario base es: %s
+                                        Su salario total por horas trabajadas en la primera quincena y entre semana de: %s
+                                        """.formatted(totalsalarios,sueldoTotal));
                 }
             } else {
                 double pagoporhora = extra * 0.03;
                 double sueldoTotal = pagoporhora + totalsalarios;
                                     System.out.println("""
-                                       Su salario base es: %s
-                                       Su salario total por horas trabajadas en la primera quincena y entre semana de: %s
-                                       """.formatted(totalsalarios,sueldoTotal));
+                                        Su salario base es: %s
+                                        Su salario total por horas trabajadas en la primera quincena y entre semana de: %s
+                                        """.formatted(totalsalarios,sueldoTotal));
             }
 
         } else {
             System.out.println("""
-                              Lo sentimos
-                              Aún no esta disponible dicho modulo para su estirpe
-                              """);
+                                Lo sentimos
+                                Aún no esta disponible dicho modulo para su estirpe
+                                """);
         }
     }
 }
@@ -247,9 +234,9 @@ public class Ejercicio1 {
         double pagoExtra = 0;
 
         System.out.println("""
-                           Bienvenido a la calculadora de Horas Extra
-                           -----
-                           Ingresa tu salario: """);
+                            Bienvenido a la calculadora de Horas Extra
+                            -----
+                            Ingresa tu salario: """);
         double salario = scn.nextDouble();
 
         if (salario < 2800000) {
@@ -263,9 +250,9 @@ public class Ejercicio1 {
 
             if (dia <= 15) {
                 System.out.println("""
-                               ¿Hoy es un día de fin de semana o feriado?
-                               1. Sí
-                               2. No""");
+                                ¿Hoy es un día de fin de semana o feriado?
+                                1. Sí
+                                2. No""");
                 int feriado = scn.nextInt();
 
                 if (feriado == 1) {
@@ -276,13 +263,13 @@ public class Ejercicio1 {
                     pagoExtra = (salario * horasExtra) * 0.01;
 
                     System.out.println("""
-                                       Tu pago extra por ser primera quincena y entre semana es: %s""".formatted(pagoExtra));
+                                        Tu pago extra por ser primera quincena y entre semana es: %s""".formatted(pagoExtra));
                 }
             } else {
                 pagoExtra = (salario * horasExtra) * 0.03;
 
                 System.out.println("""
-                                       Tu pago extra por ser segunda quincena es: %s""".formatted(pagoExtra));
+                                        Tu pago extra por ser segunda quincena es: %s""".formatted(pagoExtra));
             }
 
         }

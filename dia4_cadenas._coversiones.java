@@ -1,5 +1,7 @@
 package clase_string;
 
+import java.util.Scanner;
+
 public class Clase_String {
     public static void main(String[ ]args) {
         // Manipular texto

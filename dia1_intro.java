@@ -1,5 +1,5 @@
 //MAIN CLASS-VARIABLES
----------------------------------------------------------------------
+
 package ant_variables;
 
 import java.util.Scanner;

@@ -1,10 +1,10 @@
 //MAIN CLASS-VARIABLES
 
-package ant_variables;
+package intro;
 
 import java.util.Scanner;
 
-public class Ant_variables {
+public class intro {
 
     public static void main(String[] args) {
 //        System.out.println("Hola mundo");
@@ -51,13 +51,13 @@ public class Ant_variables {
         //----------------------------------------------------------------------
         
         System.out.println("""
-                           Bienvenido %s tus datos son los siguientes:
-                           Cedula: %s 
-                           Edad: %s
-                           Estatura %s
-                           
-                           Regrese pronto
-                           """.formatted(nombre, cedula, edad, estatura));
+                            Bienvenido %s tus datos son los siguientes:
+                            Cedula: %s 
+                            Edad: %s
+                            Estatura %s
+                            
+                            Regrese pronto
+                            """.formatted(nombre, cedula, edad, estatura));
     }
     
 }
@@ -65,10 +65,6 @@ public class Ant_variables {
 
 //CONVERSIONES CLASS
 //-------------------------------------------------------------------------
-package ant_variables;
-
-import java.util.Scanner;
-
 
 public class Conversiones {
     
@@ -101,8 +97,7 @@ public class Conversiones {
 }
 
 //EJERCICIO CLASS
-//---------------------------------------------------------------------------
-package ant_variables;
+
 
 import java.util.Scanner;
 
@@ -117,13 +112,13 @@ public class Ejercicio {
         double distancia = x.nextDouble();
 
         System.out.println("""
-                           Bienvenido a la calculadora de tiempo recorrido
-                           
-                           Ingrese a cuántos kilometros por hora viajó: %s
-                           
-                           Ingrese la distancia que reecorrió: %s
-                           
-                           """.formatted(kilometros_hora, distancia));
+                            Bienvenido a la calculadora de tiempo recorrido
+                            
+                            Ingrese a cuántos kilometros por hora viajó: %s
+                            
+                            Ingrese la distancia que reecorrió: %s
+                            
+                            """.formatted(kilometros_hora, distancia));
         
         double tiempo_recorrido=distancia/kilometros_hora;
         
